@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Proza+Libre&display=swap');
+
 /*CSS Reset*/
 
 html, body, div, span, applet, object, iframe,
@@ -23,7 +25,219 @@ time, mark, audio, video {
 
 *{
     box-sizing:border-box;
-    border:1px solid grey;
     max-width:100%;
+}
+
+/*General Styles*/
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family:'PT Serif', serif;
+}
+
+h1{
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: 'Proza Libre', sans-serif;
+    font-size:2.3rem;
+}
+
+h3{
+    font-family: 'Proza Libre', sans-serif;
+    font-size:2rem;
+}
+
+h4{
+    font-family: 'Proza Libre', sans-serif;
+    font-size:1.8rem;
+}
+
+/*Styles for the Header*/
+
+header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+h1{
+    margin-left:2%;
+}
+
+header nav{
+    width:15%;
+    padding:2% 0;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    padding:2% 3%;
+    text-align:center;
+}
+
+.pages{
+    width:25%;
+    margin-right:2%;
+}
+
+.signup-button{
+    border-radius:10%;
+    background-color:grey;
+    color:white;
+    padding:2% 4%;
+}
+
+.hero-img{
+    background-image:url('assets/cooking\ image.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+h2{
+    text-align:center;
+    margin:0 10%;    
+}
+
+/*Styles for the about section*/
+
+.about{
+    background-color: grey;
+    text-align:center;
+    padding: 2% 0;
+}
+
+.about h3{
+    margin:0 15%;
+    color: white;
+    padding: 2% 0;
+}
+
+.about p{
+    margin:1% 12.5% 3% 12.5%;
+}
+
+.about-button{
+    text-decoration: none;
+    border-radius:10%;
+    background-color:white;
+    padding:.5%;
+} 
+
+.about-button:hover{
+    background-color:black;
+    color:white;
+}
+
+.about div{
+    margin-bottom:1.5%;
+}
+
+/*Styling for Icons Section*/
+
+.icons{
+    display:flex;
+    flex-direction:row;
+    margin: 3% 1% 4% 1%;
+}
+
+.icons-div{
+    width:50%;
+    text-align:center;
+}
+
+.icons-div img{
+    width:12.5%;
+    margin:1% 0;
+}
+
+.icons-div p{
+    margin:0 4%;
+}
+
+/*Styles for the Footer*/
+
+footer{
+    margin:2% 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:grey;
+}
+
+footer img{
+    width:5%;
+    margin:2% 0;
+}
+
+footer nav{
+    width:25%;
+    text-align:center;
+    margin-bottom: 2%;
+}
+
+/*Styling for 1024px*/
+@media(max-width:1024px){
+    .pages{
+        width:35%;
+    }
+}
+
+/*Styling for 800px*/
+
+@media (max-width:800px){
+    header{
+        justify-content:space-between;
+    }
+
+    .pages{
+        width:45%;
+    }
+
+    h2{
+        text-align:center;
+        margin:0 10%;
+    }
+}
+
+/*Styling for 500px*/
+@media(max-width:500px){
+    header{
+        text-align:center;
+        justify-content:center;
+    }
+ 
+    .signup-button{
+        padding:1% 4%;
+    }
+
+    .icons-div img{
+        width:20%;
+    }
+
+    footer img{
+        width:10%;
+        margin-top:4%;
+    }
+
+    footer nav{
+        width:35%;
+        margin-bottom:4%;
+    }
 }
 
