@@ -173,7 +173,6 @@ h2{
 /*Styles for the Footer*/
 
 footer{
-    margin:2% 0;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -244,3 +243,46 @@ footer nav{
 
 
 /*Styling for the About Page*/
+
+.first-image{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    background-color:grey;
+    text-align:center;
+}
+
+.first-image img{
+    width:50%;
+}
+
+.first-image div{
+    width:50%;
+}
+
+.about-title{
+    margin:0 15% 3% 15%;
+    /* line-height:4; */
+    font-size:2.7rem;
+}
+
+.about-paragraph{
+    margin:5% 10% 0 10%;
+}
+
+.second-image{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row-reverse;
+    align-items:center;
+    text-align:center;
+    background-color:darkkhaki;
+}
+
+.second-image img{
+    width:50%;
+}
+
+.second-image div{
+    width:50%;
+}
