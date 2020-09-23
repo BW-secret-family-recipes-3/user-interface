@@ -47,7 +47,7 @@ h1{
 
 h2{
     font-family: 'Proza Libre', sans-serif;
-    font-size:2.3rem;
+    font-size:3.5rem;
 }
 
 h3{
@@ -58,13 +58,14 @@ h3{
 h4{
     font-family: 'Proza Libre', sans-serif;
     font-size:1.8rem;
+    font-weight:bold;
 }
 
 /*Styles for the Header*/
 
 header{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     justify-content:space-between;
     align-items:center;
 }
@@ -76,6 +77,8 @@ h1{
 header nav{
     width:15%;
     padding:2% 0;
+    display:flex;
+    flex-wrap:nowrap;
 }
 
 nav a{
@@ -107,6 +110,7 @@ nav a{
     align-items:center;
     justify-content:center;
     color:white;
+    -webkit-text-stroke:1px black;
 }
 
 h2{
@@ -124,7 +128,6 @@ h2{
 
 .about h3{
     margin:0 15%;
-    color: white;
     padding: 2% 0;
 }
 
@@ -190,6 +193,10 @@ footer nav{
     margin-bottom: 2%;
 }
 
+footer nav a:hover{
+    text-decoration:underline;
+}
+
 /*Styling for 1024px*/
 @media(max-width:1024px){
     .pages{
@@ -201,11 +208,14 @@ footer nav{
 
 @media (max-width:800px){
     header{
-        justify-content:space-between;
+        flex-direction:column;
+        text-align:center;
     }
 
-    .pages{
-        width:45%;
+    header nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     h2{
@@ -262,7 +272,6 @@ footer nav{
 
 .about-title{
     margin:0 15% 3% 15%;
-    /* line-height:4; */
     font-size:2.7rem;
 }
 
@@ -285,4 +294,46 @@ footer nav{
 
 .second-image div{
     width:50%;
+}
+
+/*Styling the About page for 800px*/
+
+@media(max-width:800px){
+    .about-title{
+        margin-bottom:0;
+    }
+
+    .about-paragraph{
+        margin-top:0;
+    }
+}
+
+/*Styling the About page for 500px*/
+
+@media(max-width:500px){
+    .first-image{
+        flex-direction:column;
+    }
+
+    .first-image img{
+        width:100%;
+    }
+
+    .second-image{
+        flex-direction:column;
+    }
+
+    .second-image img{
+        width:100%;
+    }
+
+   .first-image div{
+       width:100%;
+       padding:3% 0 5% 0;
+   }
+
+   .second-image div{
+       width:100%;
+       padding:3% 0 5% 0;
+   }
 }
