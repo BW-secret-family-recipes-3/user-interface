@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End of Meyer's Reset*/
+
+/*General Styles*/
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+}
+
+html{
+    font-size:62.5%;
+  }
+
+body {
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+    color: #4f4f4f;
+}
+
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+section, footer {
+    padding: 4% 0;
+}
+
+a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4f4f4f;
+}
+
+i {
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+/*Header Section Styles*/
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color:rgba(255, 255, 255, 0.8);
+    padding: 1% 0;
+}
+
+.logo{
+    height: 10rem;
+    width: 10rem;
+}
+
+.headertext {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+header nav a {
+    margin: 0 5%;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+header .links a {
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.button:hover{
+    background-color:#4f4f4f;
+    color: white;
+}
+
+/*Heading Image*/
+.heading-container{
+    width: 100%;
+    height: 85vh;
+    background-image:url("../img/todd-quackenbush-x5SRhkFajrA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-top: 9%;
+}
+
+.heading-container h1{
+    color: white;
+}
+
+/*About the company*/
+.topsection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: 5% 20%;
+}
+
+.topsection h2{
+    margin-bottom: 2%;
+}
+
+.topsection p{
+    margin-bottom: 6%;
+    line-height: 1.5;
+}
+
+.topsection a{
+    font-size: 2.5rem;
+    border: 2px solid #4f4f4f;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.topsection .topcontainer {
+    border: 2px solid #4f4f4f;
+    padding: 5%;
+}
+
+/*Hero Image*/
+.hero {
+    background-image:url("../img/big-dodzy-Re5kf-8o3eM-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+/*Middle Section Styles*/
+.middlesection .square-containers{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.middlesection p{
+    line-height: 1.5;
+}
+
+.middlesection .square-containers .firstsquare{
+    width: 20%;*/
+}
+
+.middlesection .square-containers .secondsquare{
+    width: 20%;
+}
+
+.middlesection .square-containers .thirdsquare{
+    width: 20%;
+}
+
+/*Join Section Styles*/
+.join{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px dotted #4f4f4f;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.join h2{
+    margin-bottom: 20%;
+}
+
+.join a{
+    border: 2px solid #4f4f4f;
+    border-radius: 25px;
+    padding: 7%;
+    text-align: center;
+}
+
+/*Footer Styles*/
+footer {
+    background-color: rgb(172, 169, 169);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    color: white;
+}
+
+.footer .logo img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
