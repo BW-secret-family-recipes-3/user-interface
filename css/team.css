@@ -270,11 +270,15 @@ footer {
 footer .logo{
     height: 25%;
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .footercontainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 25%;
 }
@@ -389,14 +393,6 @@ footer .footernav {
         padding: 2% 0;
     }
 
-    h4{
-        font-size: 1.75rem;
-    }
-
-    .tile p{
-        font-size: 1.5rem;
-    }
-
     #signup-button{
         padding: 2% 1%;
         margin-top: 5%;
@@ -450,14 +446,6 @@ footer .footernav {
     .tile {
         width: 20%;
         padding: 2% 0;
-    }
-
-    h4{
-        font-size: 1.75rem;
-    }
-
-    .tile p{
-        font-size: 1.5rem;
     }
 
     #signup-button{
