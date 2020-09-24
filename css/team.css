@@ -215,11 +215,14 @@ header nav a:hover{
     display: flex;
     flex-direction: row;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tile {
-    margin: 0 2%;
-    width: 9.75%;
+    margin: 2% 2%;
+    width: 20%;
 }
 
 .tile img{
@@ -305,6 +308,7 @@ footer .footernav {
 
     #signup-button{
         padding: 0 0;
+        margin-top: 10%
     }
 
     header nav{
@@ -327,7 +331,7 @@ footer .footernav {
     }
 
     .tile p{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     footer {
@@ -340,7 +344,7 @@ footer .footernav {
     }
 
     footer .footercontainer{
-        padding-bottom: 25%;
+        margin-bottom: 10%;
     }
 }/*max-width 500px*/
 
@@ -368,6 +372,29 @@ footer .footernav {
         justify-content: center;
         text-align: center;
         letter-spacing: 0px;
+    }
+
+    header nav{
+        flex-wrap: wrap;
+    }
+
+    .teamcontainer{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tile {
+        width: 20%;
+        padding: 2% 0;
+    }
+
+    h4{
+        font-size: 1.75rem;
+    }
+
+    .tile p{
+        font-size: 1.5rem;
     }
 
     #signup-button{
@@ -408,6 +435,29 @@ footer .footernav {
         justify-content: center;
         text-align: center;
         letter-spacing: 0px;
+    }
+
+    header nav{
+        flex-wrap: wrap;
+    }
+
+    .teamcontainer{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tile {
+        width: 20%;
+        padding: 2% 0;
+    }
+
+    h4{
+        font-size: 1.75rem;
+    }
+
+    .tile p{
+        font-size: 1.5rem;
     }
 
     #signup-button{
